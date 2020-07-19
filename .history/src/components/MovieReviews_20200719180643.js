@@ -1,12 +1,11 @@
 // Code MovieReviews Here
-import React, { Component } from 'react';
-import 'isomorphic-fetch';
-
+import React from 'react';
 
 const Review = ({
   headline,
   byline,
-  link
+  link,
+  summary_short
 }) => {
   return (
 
@@ -24,6 +23,7 @@ const Review = ({
         <br/>
         <span className="author">{byline}</span>
       </header>
+      <blockquote>{summary_short}</blockquote>
     </div>
   );
 };
@@ -34,4 +34,4 @@ MovieReviews.defaultProps = {
   reviews: []
 };
 
-export default MovieReviews
+export default MovieReviews;

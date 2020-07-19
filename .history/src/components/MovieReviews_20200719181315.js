@@ -24,6 +24,7 @@ const Review = ({
         <br/>
         <span className="author">{byline}</span>
       </header>
+      
     </div>
   );
 };
