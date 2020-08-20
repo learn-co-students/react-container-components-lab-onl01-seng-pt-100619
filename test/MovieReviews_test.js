@@ -4,6 +4,7 @@ import Enzyme, { shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import MovieReviews from '../src/components/MovieReviews';
 import testReviews from './test-reviews';
+import Review from '../src/components/Review';
 
 Enzyme.configure({ adapter: new Adapter() })
 
